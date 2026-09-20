@@ -37,19 +37,22 @@ nav {
 .hero {
   text-align: center;
   padding: 100px;
-  background: linear-gradient(to right, red, blue);
+  background: linear-gradient(to right, yellow, green);
   color: white;
 }
 
 .btn {
-  background: black;
+  background: blue;
   color: white;
   padding: 5px;
   text-decoration: none;
-}
+  
+  }
+  
 
 /* Menu */
 .menu-container {
+  background: lemonchiffon;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -76,13 +79,50 @@ nav {
 
 /* Contact */
 .contact {
+    background-color: #f5f5f5;
   text-align: center;
-  padding: 50px;
+  padding: 10px;
+
+ /* Form Design */
+form {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
+form input,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+form button {
+  background: red;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: blue;
+}
+
+/* Success Message */
+#successMsg {
+  margin-top: 10px;
+  color: green;
+}
+
+}
 /* Footer */
 footer {
-  background: green;
+  background: lightseagreen;
   color: white;
   text-align: center;
   padding: 3px;
@@ -90,7 +130,8 @@ footer {
   
 }
 
-footer a {
+footer a:hover {
+    text-color:red;
   color: white;
   margin: 0px;
   text-decoration: none;
